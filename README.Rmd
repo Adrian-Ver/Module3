@@ -1,14 +1,7 @@
----
-title: "Getting and Cleaning Data Course Project"
-author: "Adrian-Ver Federizo"
-date: "January 21, 2018"
-output: html_document
----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-Note that the following information until before Creating Tidy Data section all came from the UCI HAR Dataset.
+## Getting and Cleaning Data Course Project
+
+Note that the following information all came from the UCI HAR Dataset.
 
 ### The Human Activity Recognition Using Smartphones Dataset Version 1.0
 
@@ -71,11 +64,3 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-The complete list of variables of each feature vector is listed below:
-
-```{r, echo = F}
-setwd("C:/Users/Adrian-Ver/Documents/Data Science JHU/Module 3 [Getting and Cleaning Data]/Week 4/M3W4 Project/UCI HAR Dataset")
-features <- read.table("features.txt")
-features[,2]
-```
